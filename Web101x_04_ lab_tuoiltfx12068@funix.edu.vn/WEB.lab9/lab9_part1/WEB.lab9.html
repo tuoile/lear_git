@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewpoint" width="device-width, initial=1.0">
+        <title>thực hành lab9</title>
+        <style>
+            body {margin-left:10%;
+                margin-top:5%;
+            line-height:150%;}
+            </style>
+        <script>
+//THỰC HÀNH VỚI MẢNG ARRAY
+//1. Khai báo và khởi tạo giá trị cho mảng
+document.write("THỰC HÀNH VỚI MẢNG ARRAY");
+document.write("<br>");
+document.write("1. Khai báo và khởi tạo giá trị cho mảng");
+document.write("<br>");
+const myArray = ["name", 2,"address"]
+document.write(myArray);
+document.write("<br>");
+//2.Truy cập phần tử 
+document.write("2. Truy cập phần tử ");
+document.write("<br>");
+const myArray1 = [50, 60, 70];
+var myData=myArray[0];
+document.write(myData);
+document.write("<br>");
+//3.Thay đổi phần tử 
+document.write("3. Thay đổi phần tử");
+document.write("<br>");
+const myArray2 = [18, 64, 99];
+myArray2[0]=45;
+document.write(myArray2);
+document.write("<br>");
+//4.Mảng nhiều chiều (không bắt buộc) 
+document.write("4. Mảng nhiều chiều (không bắt buộc)");
+const myArray3 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+const myData1 = myArray3[2][1];
+document.write("<br>");
+document.write(myData1);
+document.write("<br>");
+//5.Các thao tác thêm, bớt phần tử: 
+//5.1. Thêm phần tử sử dụng push
+document.write("5.1. Thêm phần tử sử dụng push");
+document.write("<br>");
+const myArray4 = [["John", 23], ["cat", 2]];
+myArray4.push(["dog", 3])
+document.write(myArray4);
+document.write("<br>");
+//5.2. bớt phần tử cuối dãy "with pop" 
+document.write("5.2. bớt phần tử cuối dãy with pop");
+document.write("<br>");
+const myArray5 = [["John", 23], ["cat", 2]];
+const removedFromMyArray=myArray5.pop();
+document.write(myArray5);
+document.write("<br>");
+document.write(removedFromMyArray);
+document.write("<br>");
+//5.3. bớt phần tử cuối dãy "with shift" 
+document.write("5.3. bớt phần tử cuối dãy with shift");
+document.write("<br>");
+const myArray6 = [["John", 23], ["dog", 3]];
+var removedFromMyArray1=myArray6.shift();
+document.write(removedFromMyArray1);
+document.write("<br>");
+document.write(myArray6);
+document.write("<br>");
+//5.4.thay phần tử đầu với with unshift 
+document.write("5.4.thay phần tử đầu với with unshift ");
+document.write("<br>");
+const myArray7 = [["John", 23], ["dog", 3]];
+myArray7.shift();
+myArray7.unshift(["Paul", 35]);
+document.write(myArray7);
+document.write("<br>");
+//THỰC HÀNH VỚI VÒNG LẶP LOOP
+//1. thực hành với vòng lặp for
+//1.1. lặp lại với vòng lặp for
+document.write("THỰC HÀNH VỚI VÒNG LẶP LOOP");
+document.write("<br>");
+document.write("1.thực hành với vòng lặp for");
+document.write("<br>");
+document.write("1.1.Lặp lại với vòng lặp for");
+document.write("<br>");
+const myArray8 = [];
+for (let i=1;i<6;i++){myArray8.push(i);}
+document.write(myArray8);
+document.write("<br>");
+//1.2. Lặp lại các số lẻ bằng vòng lặp For 
+document.write("1.2. Lặp lại các số lẻ bằng vòng lặp For");
+document.write("<br>");
+const myArray9 = [];
+for (let i=1;i<10;i+=2){myArray9.push(i);}
+document.write(myArray9);
+document.write("<br>");
+//1.3. Đếm ngược bằng một vòng lặp for  
+document.write("1.3. Đếm ngược bằng một vòng lặp for ");
+document.write("<br>");
+const myArray10 = [];
+for (let i=9; i>0;i-=2){myArray10.push(i);}
+document.write(myArray10);
+document.write("<br>");
+//1.4. Lặp lại qua một mảng bằng vòng lặp For  
+document.write("1.3.Lặp lại qua một mảng bằng vòng lặp For   ");
+document.write("<br>");
+const myArr11 = [2, 3, 4, 5, 6];
+let total = 0;
+for (let i=0; i<myArr11.length; i++){
+    total += myArr11[i]; 
+}
+document.write(total);
+document.write("<br>");
+//2. Thực hành với vòng lặp while 
+document.write("2. Thực hành với vòng lặp while");
+document.write("<br>");
+const myArray12 = [];
+let i=0;
+while (i<6) {myArray12.push(6-i-1); i++;}
+document.write(myArray12);
+document.write("<br>");
+//3. Thực hành với vòng lặp do-while 
+document.write("3. Thực hành với vòng lặp do-while ");
+document.write("<br>");
+const myArray13 = [];
+let n = 10;
+do {
+  myArray13.push(n);
+  n++;
+} while (n<5)
+document.write(n,"&ensp;",myArray13);
+document.write("<br>");
+//4. Thực hành tạo vòng lặp lồng nhau 
+document.write("Thực hành tạo vòng lặp lồng nhau ");
+document.write("<br>");
+function multiplyAll(arr) {
+  let product = 1;
+ 
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    product *=arr[i][j];
+  }
+}
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+        </script>
+    </head>
+    <body>
+        <p id="demo"></p>
+    </body>
+</html>

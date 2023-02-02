@@ -1,0 +1,113 @@
+@media screen and (max-width: 768px) {
+  /*header &footer*/
+  #myTopnav > li:nth-child(4) {
+    position: absolute;
+    right: 0px;
+    top: 2%;
+  }
+  
+  .header {
+    align-items: center !important;
+  }
+  .navigation li:not(#myTopnav > li:nth-child(4)) {
+    display: none;
+  }
+  .icon {
+    display: block !important;
+  }
+  #myTopnav {
+    flex-direction: column;
+    padding-top: 5px;
+    text-align: center;
+  }
+  #ballpicture {
+    padding-top: 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    left: 100%;
+    top:0;
+    width:max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .hfooter {margin-left:3%;}
+  .hfooter h1 {width:95%;
+  padding-bottom: 5%;}
+  .hfooter p {display: none;}
+  .footer section { width:100%;
+    text-align: center;
+  margin:0%;
+margin-left: auto;
+margin-right: auto;}
+  .footer section h2 {text-align: center;}
+  .footer {
+    width: 100%;
+    text-align: center;
+   margin:0%;
+  }
+  .navigation .dropdown ul li a {text-transform: none;}  
+  /*index*/
+main .section1 {display:none;}
+ main .section2 {
+    width: 90%;
+    margin: 2% 5% 2% 5%; }
+/*detail*/
+.detail1_main img {width:95%;
+  margin-left:auto;
+  margin-right:auto;}
+    
+/*about*/
+
+
+/*book*/
+.mainbook {width:90%;
+margin:5%;}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container .left {width:100%;
+  margin-bottom: 3%;
+  font-weight: bold;}
+  
+  .flex-container .right {width:100%;
+      margin-bottom: 3%;}
+ 
+}
+@media screen and (min-width: 768px)and (max-width: 992px) 
+{
+  /*index*/
+  main .section1 {display:none;}
+ main .section2 {
+    width: 90%;
+    margin: 2% 5% 2% 5%; }
+/*book*/
+.mainbook {width:90%;
+  margin:5%;}
+  .navigation ul li {
+    margin-left:10%;
+    font-size: 120%;
+  }
+  .dropdown-content { 
+    position: absolute;
+    width:max-content;  
+  }
+  .navigation .dropdown ul li a {text-transform: none;}  
+}
+@media screen and (min-width: 992px) {
+  .navigation ul li {
+    padding: 10px;
+    margin-left:10%;
+    font-size: 120%;
+  }
+  .dropdown-content {
+  
+    position: absolute;
+    width:max-content;
+    
+  }
+.navigation .dropdown ul li a {text-transform: none;}  
+}

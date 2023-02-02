@@ -1,0 +1,46 @@
+table {
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border: none solid;
+    font-size: 120%;
+}
+
+th {
+    color: #ffffff;
+    background-color: #05722f;
+    padding: 2% 2% 2% 2%;
+}
+
+th:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 15px 0 0;
+}
+
+table tr:hover {
+    color: #059cd8;
+    font-weight: bolder;
+}
+
+tr {
+    border-bottom: 1px solid#a3acaf;
+}
+
+tr:last-child {
+    border-bottom: 2px solid#03860a;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td {
+    padding: 5% 5% 5% 5%;
+}

@@ -1,0 +1,54 @@
+
+ 
+.nav_capital {text-transform: uppercase;
+    text-align: center;
+    width:max-content;
+}
+.carousel-item img {width:100%;}
+.submit_size {width:max-content;}
+
+
+
+@media (max-width: 768px){
+    .logo {width:10%;}
+    
+    #ballpicture {
+        width:100%;}
+.nav_hover {display: block;
+    background-color:#b2bab7;}
+.nav_hover a:hover {box-sizing: content-box;
+    border: none;
+    font-weight: bolder;
+    background-color: rgb(34, 157, 3);
+  }
+.nav_capital {margin-left:auto; margin-right:auto;}
+
+  }
+
+
+
+  @media screen and (min-width: 768px)and (max-width: 992px) {
+    .logo {width:8%;}
+   #ballpicture {
+        width:100%;}
+.nav_hover a:hover {box-sizing: content-box;
+    border: none;
+    font-weight: bolder;
+    background-color: rgb(34, 157, 3);}
+    .nav_hover a {width:max-content;}
+    .nav_hover {margin-left:40%;}
+
+}
+
+
+  @media screen and (min-width: 992px) {
+    .logo {width:6%;}
+   #ballpicture {
+        width:100%;}
+    .nav_hover a:hover {box-sizing: content-box;
+        border: none;
+        font-weight: bolder;
+        background-color: rgb(34, 157, 3);
+        }
+        .nav_hover {margin-left:50%;};
+        .nav_hover a {width:max-content;};}

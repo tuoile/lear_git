@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <style>
+          *{font-family: 'Times New Roman', Times, serif;
+        margin: 5% 0% 0% 10%;}
+        </style>
+        <script>
+//1. Viết hàm 
+document.write("1. Viết hàm ");
+document.write("<br>");
+function reusableFunction(){document.write("Hi World");}
+reusableFunction();
+document.write("<br>");
+//2. Đầu vào của hàm 
+function functionWithArgs(param1,param2){document.write(param1+param2);};
+document.write("2. Đầu vào của hàm ");
+document.write("<br>");
+functionWithArgs(1,2);
+document.write("<br>");
+functionWithArgs(7,9);
+document.write("<br>");
+//3.Đầu ra của hàm 
+document.write("3. Đầu ra của hàm ");
+function timesFive(num){return num*5};
+document.write("<br>");
+document.write(timesFive(5));
+document.write("<br>");
+document.write(timesFive(2));
+document.write("<br>");
+document.write(timesFive(0));
+document.write("<br>");
+//4.Hàm không trả về giá trị  
+document.write("4.Hàm không trả về giá trị ");
+document.write("<br>");
+let sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+function addFive() {
+  sum = sum + 5;
+}
+document.write(addThree());
+document.write("<br>");
+document.write(addFive());
+//5.Nhận kết quả từ kết quả trả về 
+document.write("<br>");
+document.write("5.Nhận kết quả từ kết quả trả về ");
+document.write("<br>");
+let processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed=processArg(7);
+document.write(processed);
+document.write("<br>");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

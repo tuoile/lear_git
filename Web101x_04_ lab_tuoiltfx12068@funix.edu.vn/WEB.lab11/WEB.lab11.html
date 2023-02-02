@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab 11</title>
+<script>
+function check() {
+    var email1 = document.getElementById("email_addr");
+    var email2 = document.getElementById("email_repeat");
+    if (email1.value != email2.value) {
+        alert("The two emails must match!!");
+        return false;
+    }
+}
+function nicknameFunction() {
+            if (document.getElementById("yesNick").checked) {
+                document.getElementById("nick").style.display = "inline";
+                document.getElementById("nickname").setAttribute("required", true);
+            } else {
+                document.getElementById("nickname").removeAttribute("required");
+                document.getElementById("nick").style.display = "none";
+            }
+        }
+</script>
+</head>
+<body>
+    <form>
+        <label>Preferred email address:  
+            <input type="email" id="email_addr" name="email1" value="me@me.com" required></label><br><br>
+        <label>Repeat email address:  
+            <input type="email" id="email_repeat" name="email2" required onchange="check()"></label><br><br>
+        <input type="submit" value="Confirm Emails!" onclick="return check();">
+    </form>
+
+<form action="">
+    Favorite Foods <br>
+    <label><input type="checkbox" name="food" value="pizza"> Pizza</label><br>
+    <label><input type="checkbox" name="food" value="chips"> Chips</label><br>
+    <label><input type="checkbox" name="food" value="kale"> Kale</label><br>
+    <input type="submit" value="Submit">
+</form>
+<form>
+
+    <label><input type="radio" name="gender" value="male"> Male</label><br>
+    <label><input type="radio" name="gender" value="female"> Female </label><br>
+    <input type="submit" value="Submit">
+</form>
+<form>
+    <fieldset>
+        <legend>Form Verification</legend>
+        <label for="">First Name</label>
+        <input type="text" name="fname" id="fname" required><br>
+        <label for="">Last Name</label>
+        <input type="text" name="lname" id="lname" required><br>
+        <label for="">Nickname?</label>
+        <input type="checkbox" id="yesNick" value="yes" checked onchange="nicknameFunction()"><br>
+        <div id="nick">
+            <label for="">Nickname:</label>
+            <input type="text" id="nickname" name="nickname">
+            <br>
+        </div>
+        <input type="submit" value="Verify">
+    </fieldset>
+</form>
+</body>
+</html>

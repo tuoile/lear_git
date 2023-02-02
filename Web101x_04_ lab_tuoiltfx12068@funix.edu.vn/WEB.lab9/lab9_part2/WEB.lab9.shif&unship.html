@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The unshift() Method</h2>
+
+<p>unshift() adds new items to the beginning of an array:</p>
+
+<p id="demo"></p>
+
+<p>shift() removes the first item of an array:</p>
+
+<p id="demo1"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon", "Pineapple");
+
+document.getElementById("demo").innerHTML = fruits;
+
+const fruit1 = ["Banana", "Orange", "Apple", "Mango"];
+fruit1.shift();
+
+document.getElementById("demo1").innerHTML = fruit1;
+</script>
+
+</body>
+</html>
+

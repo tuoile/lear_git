@@ -1,0 +1,75 @@
+    body {
+        background-image: url("./images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header,
+    main {
+        text-align: center;
+    }
+    
+    a:link {
+        color: #f32020;
+    }
+    
+    a:visited {
+        color: rgb(28, 226, 10);
+    }
+    
+    h1 {
+        font-size: 400%;
+        color: #ecde1b;
+        font-family: cursive, Consolas;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    header .text {
+        color: #ffff;
+        font-family: Rockwell;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    
+    nav {
+        font-size: 150%;
+        font-weight: bold;
+        padding-bottom: 5%;
+    }
+    
+    section {
+        list-style-image: url('./images/pizza.png');
+    }
+    
+    img {
+        width: 5%;
+    }
+    
+    section b {
+        font-family: Brush Script MT;
+    }
+    
+    section p {
+        color: #ffff;
+        font-size: 150%;
+    }
+    
+    section .small {
+        font-size: 250%;
+        color: #ffffff;
+    }
+    
+    section .big {
+        font-size: 300%;
+        color: #e9112e;
+    }
+    
+    section .color {
+        font-size: 300%;
+        color: #ecb41b;
+    }
+    
+    footer {
+        color: #ecb41b;
+    }

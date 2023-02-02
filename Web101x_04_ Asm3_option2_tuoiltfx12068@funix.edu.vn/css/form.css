@@ -1,0 +1,131 @@
+html {
+    font-family: Arial, Helvetica, sans-serif
+}
+html,
+body {
+    margin:0;
+   height:100%;
+}
+#ballpicture {width: 100%;}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {max-width: 8%;
+}
+.header{
+    align-items: center;
+    margin-right: 10px;
+}
+.navigation ul{
+    list-style-type: none;
+    margin:0px;
+padding: 0px;
+}
+.navigation ul li{
+    padding:10px;
+    
+}
+.navigation ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+.navigation ul li:hover
+    {background-color: #28ce97;}
+.navigation ul a:hover {color: #0a0b0a;
+    font-weight: bolder;}
+.dropdown {
+        position: relative;
+        display: inline-block;
+        }    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+      
+.dropdown:hover .dropdown-content {
+        display: block;
+        background-color: rgb(198, 194, 192);
+   }
+.hfooter {background-image: url("./banner.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+padding: 2% 2% 1% 2%;
+color:#ffffff}
+main div {box-sizing: border-box;
+    border: 1px solid #000000;
+    padding: 0% 0% 2% 2%;
+    margin: 2% 5% 0% 7%;
+    width: 60%;}
+table {border-spacing:30%;
+        line-height:140%;}
+.long {padding: 2% 1%;
+        line-height:2%;
+    width: 90%}
+
+#mySelect {font-size: 100%;
+margin-bottom:4%;
+margin-top: 4%;}
+#hours, #numberPlayer, #team  {padding: 2% 1%;
+    line-height:2%;
+    width: 45%;}
+ td:first-child {font-weight: bold;
+    width:30%;}
+ td:nth-child(2){padding-left: 15px;}
+ .hight {padding-bottom: 10%;}
+
+input[type=submit] 
+    {background-color: #3cbc47;
+    color: white;
+    margin-top: 5%;
+    border: 1px solid #9a9292;
+    font-size:150%;
+    border-radius: 4px;
+    text-align: center;
+    padding: 4% 3%;
+    line-height:4%;
+width: 30%}
+.clickbotton {text-align: center;
+box-sizing: border-box;
+border:none;
+margin-left: auto;
+margin-right: auto;}
+
+span{
+    color:red;
+    display: block;
+    padding: 5px 0px;
+    font-style: italic;
+    font-size: 95%;
+    
+}
+.totalMoney {width:90%;
+    list-style-type: none;
+    float:left;
+    margin-left: 0%;
+    padding-left: 0%;}
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;}
+footer section {box-sizing: border-box;
+    border: none;
+    display: block;
+    width: 50%;
+float:left;
+background-color: #cccccc;
+margin-top: 2%;}
+footer section ul{list-style-type: none;
+    margin-left: 5%;}
+footer h2 {text-align: left;
+margin-left: 10%;}
+footer section ul a{
+        text-decoration: none;
+        color: #000000;
+    line-height: 20px;}
